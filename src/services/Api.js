@@ -34,3 +34,4 @@ axios.interceptors.response.use(function (response) {
 
 export const getProducts = () => instance.get('/get-products')
 export const getCategories = () => instance.get('/get-categories')
+export const getProductDetail = (productId) => instance.get(`/product/${productId}`)
