@@ -4,7 +4,7 @@ import axios from 'axios'
 // https://reactnative.dev/category.json
 
 const instance = axios.create({
-  baseURL: 'https://forever21.hungvu.net',
+  baseURL: 'https://mobileshop.hungvu.net',
   timeout: 60000, // 1phut
   headers: {
     Accept: 'application/json',
@@ -33,3 +33,4 @@ axios.interceptors.response.use(function (response) {
 });
 
 export const getProducts = () => instance.get('/get-products')
+export const getCategories = () => instance.get('/get-categories')

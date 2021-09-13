@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useHistory } from "react-router-dom";
-import { getMovie, getProducts } from '../services/Api'
+import { getCategories, getProducts } from '../services/Api'
 import ClipLoader from "react-spinners/ClipLoader";
 import ProductItem from '../components/Item'
 
